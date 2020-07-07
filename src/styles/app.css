@@ -1,0 +1,257 @@
+body {
+    background-color: #232324;
+}
+
+.container {
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.stackoptions {
+    float: left;
+    margin-left: 50px;
+    display: flex;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #363636;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.swipeDirection {
+    margin: 10px;
+}
+
+.paginationToggle {
+    margin: 10px;
+}
+
+.visibleCardsInput {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+}
+
+.header {
+    margin-left: 1vw;
+    font-size: 38px;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    cursor: default;
+}
+
+p {
+    font-family: Helvetica, sans-serif;
+    color: white;
+}
+
+/* Swipe Direction Radio Buttons */
+
+.directions__container {
+    display: grid;
+    border-radius: 5px;
+    padding: 10px;
+    grid-template-areas:
+        '. up .'
+        'left base right'
+        '. down .';
+    grid-template-rows: 50px 50px 50px;
+    grid-template-columns: 50px 50px 50px;
+    gap: 10px;
+}
+
+.card {
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+    width: 35px;
+    height: 40px;
+    cursor: pointer;
+}
+.base1,
+.base2,
+.base3 {
+    position: absolute;
+    cursor: default;
+    left: -16px;
+}
+
+.base1 {
+    top: -21px;
+}
+
+.base2 {
+    top: -18px;
+}
+
+.base3 {
+    top: -15px;
+    transition: 0.1s;
+}
+
+.directions__container input[type='radio'] {
+    display: none;
+}
+
+.directions__container input[type='radio']:checked + .card {
+    opacity: 1;
+}
+
+.card:not(.base1):not(.base2):not(.base3) {
+    opacity: 0.5;
+}
+
+.left {
+    transform: translateX(0px) translateY(0px) translateZ(0) rotate(-10deg);
+}
+
+.right {
+    transform: translateX(0px) translateY(0px) translateZ(0) rotate(10deg);
+}
+
+.baseCard,
+.leftDirection,
+.rightDirection,
+.upDirection,
+.downDirection {
+    position: relative;
+    margin: auto;
+}
+
+.baseCard {
+    grid-area: base;
+}
+
+.leftDirection {
+    grid-area: left;
+}
+.rightDirection {
+    grid-area: right;
+}
+.upDirection {
+    grid-area: up;
+}
+.downDirection {
+    grid-area: down;
+}
+
+/* Toggle Pagination Slider */
+
+.toggleswitch {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 60px;
+    height: 34px;
+}
+
+.toggleswitch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: '';
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #cceabb;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #cceabb;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Visible Cards Options */
+.input__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input__container input,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+.input__container button {
+    border: none;
+    width: 50px;
+    height: 35px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.input__container .dec__btn,
+.inc__btn {
+    background-color: #232324;
+    outline: none;
+}
+
+.input__container .dec__btn {
+    border-radius: 5px 0 0 5px;
+}
+
+.input__container .inc__btn {
+    border-radius: 0 5px 5px 0;
+}
+
+.visiblecards__inputfield {
+    position: relative;
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 30px;
+    color: #333c48;
+    text-align: center;
+    font-size: 20px;
+}
+
+.mainstack__container {
+    display: flex;
+    padding-left: 50px;
+    align-items: center;
+}
+
+.stackedpagination__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

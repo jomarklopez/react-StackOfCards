@@ -1,0 +1,28 @@
+.pagination__container {
+    margin: 10px;
+}
+
+.pagination__btns {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.page__btn:first-child {
+    border-radius: 5px 0 0 5px;
+}
+.page__btn:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.page__btn {
+    border: none;
+    background-color: white;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.page__btn:disabled {
+    cursor: default;
+    color: black;
+}
