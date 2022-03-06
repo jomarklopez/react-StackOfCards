@@ -7,9 +7,9 @@ With this component you can:
 3. Change the number of cards visible
 
 Things I learned from this small project:
-1. Learn how to read js vanilla code and convert it to a framework
+1. Learn how to read js vanilla code and convert it to a different framework
 2. Git Source Control + Deployment to Heroku
-3. React Hooks particulary (useState,useRef)
+3. React Hooks (useState, useRef, lifecycle)
 4. Using React to create animations and transitions
 
 
