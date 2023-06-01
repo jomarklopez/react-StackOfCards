@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.eee3c5da.css",
-    "main.js": "/static/js/main.1128582b.js",
-    "index.html": "/index.html",
-    "main.eee3c5da.css.map": "/static/css/main.eee3c5da.css.map",
-    "main.1128582b.js.map": "/static/js/main.1128582b.js.map"
+    "main.css": "/jomarklopez/react-StackOfCards/static/css/main.eee3c5da.css",
+    "main.js": "/jomarklopez/react-StackOfCards/static/js/main.1128582b.js",
+    "index.html": "/jomarklopez/react-StackOfCards/index.html",
+    "main.eee3c5da.css.map": "/jomarklopez/react-StackOfCards/static/css/main.eee3c5da.css.map",
+    "main.1128582b.js.map": "/jomarklopez/react-StackOfCards/static/js/main.1128582b.js.map"
   },
   "entrypoints": [
     "static/css/main.eee3c5da.css",
