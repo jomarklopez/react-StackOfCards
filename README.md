@@ -1,18 +1,25 @@
-## React Stack of Cards
+# React Stacked Cards
 
-With this component you can:
+React Stacked Cards is an interactive and responsive ReactJS application that showcases the use of a stacked cards feature, built with a focus on seamless user interaction and experience.
 
-1. Change Swipe Directions
-2. Add a pagination
-3. Change the number of cards visible
+## Features
 
-Things I learned from this small project:
-1. Learn how to read js vanilla code and convert it to a different framework
-2. Git Source Control + Deployment to Heroku
-3. React Hooks (useState, useRef, lifecycle)
-4. Using React to create animations and transitions
+With this component, you have the ability to:
 
+- Change swipe directions for a customizable user interaction experience
+- Add pagination for managing large collections of cards
+- Alter the number of cards visible at one time for variable display configurations
 
-DEMO: https://reactjs-stack-of-cards.herokuapp.com/
+## Learning Outcomes
 
-Inspired by: https://www.outsystems.com/blog/posts/gestures_glamour_swipeable_stacked_cards/
+This project served as a great learning experience, allowing me to:
+
+- Deepen my understanding of React Hooks, specifically useState and useRef, and mimic lifecycle methods in a functional component
+- Gain experience in creating animations and transitions using React, enhancing the dynamic and interactive nature of web applications
+- Enhance my skills in Git source control and deployment on Heroku, fostering best practices in version control and continuous integration/continuous deployment (CI/CD)
+- Develop the ability to read vanilla JavaScript code and translate it into a different framework (React), improving my overall flexibility and adaptability as a developer
+
+## Deployment
+
+The application is successfully deployed on Heroku. You can view the live project [here](https://react-stacked-cards.herokuapp.com/).
+
