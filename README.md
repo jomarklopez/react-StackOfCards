@@ -21,5 +21,5 @@ This project served as a great learning experience, allowing me to:
 
 ## Deployment
 
-The application is successfully deployed on Heroku. You can view the live project [here](https://react-stacked-cards.herokuapp.com/).
+The application is successfully deployed on Github Pages. You can view the live project [here](https://jomarklopez.github.io/react-StackOfCards/).
 
